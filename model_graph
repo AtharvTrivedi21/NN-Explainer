@@ -1,0 +1,17 @@
+digraph {
+	rankdir=LR
+	0 [label="dense
+(None, 224)"]
+	1 [label="batch_normalization
+(None, 224)"]
+	0 -> 1
+	2 [label="dropout
+(None, 224)"]
+	1 -> 2
+	3 [label="dense_1
+(None, 112)"]
+	2 -> 3
+	4 [label="dense_2
+(None, 1)"]
+	3 -> 4
+}
