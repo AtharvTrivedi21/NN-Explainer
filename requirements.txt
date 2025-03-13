@@ -1,0 +1,6 @@
+streamlit
+tensorflow
+networkx
+matplotlib
+graphviz
+pydot
