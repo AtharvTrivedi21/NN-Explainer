@@ -43,7 +43,7 @@ def generate_graph(model):
     dot = graphviz.Digraph(format='png')
     dot.attr(rankdir='LR')
     for i, layer in enumerate(model.layers):
-        dot.node(str(i), layer.name + f'\n{layer.output_shape}')
+        dot.node(str(i), layer.name + f'\n{layer.output.shape}')
         if i > 0:
             dot.edge(str(i-1), str(i))
     dot.render("model_graph")
